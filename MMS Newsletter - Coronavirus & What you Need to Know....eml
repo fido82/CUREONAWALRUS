@@ -1,0 +1,336 @@
+Delivered-To: dominikfilipiuk@gmail.com
+Received: by 2002:a25:4f41:0:0:0:0:0 with SMTP id d62csp3612508ybb;
+        Tue, 25 Feb 2020 02:29:59 -0800 (PST)
+X-Google-Smtp-Source: APXvYqwBmdQ5vj5QuKumoPwk4QV4y8FKca1G2yQJDWd/cLZip+F7F54YgfyioXTfgY/nzkeJNKi+
+X-Received: by 2002:ac8:7b9a:: with SMTP id p26mr53030103qtu.281.1582626599517;
+        Tue, 25 Feb 2020 02:29:59 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1582626599; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Typk1LbUTcSz+6u9S6hsrMh/sS1VB4k7IEjBPrkXBcbG8eGIw/TM/GBXYo5wnRfWGC
+         gbqBrMZV/cwao/LR9Vj7p3EXT4KA4s6R3GUCs6Q+qAU0VOPueDWOeuXotbI3YAof9I1Q
+         DvTZh6g+dZnV/iQE06lVGxPCA8M6tD3D59icZY+EA8izlp+ifRUSFVxGHlsipdWCmqzn
+         caYleQgr0FK0HlwDgSWaYhH1b0pfaa8et0gHsqDCMSvZ/4WaXIN5JF3KD0PugK6UYyaZ
+         /r9v/j1GPmnpLbCk7V3yydz+rqxvARz7AusJa2Qm+t8HlO5bboav65zFaXSPlI6Y9qBP
+         IrEw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=sender:subject:list-unsubscribe:feedback-id:list-unsubscribe-post
+         :require-recipient-valid-since:x_id:to:from:mime-version:message-id
+         :date:dkim-signature;
+        bh=4fJ8f8BmhGXSSCU99a94OjlEkgwFWXc177CvmjtfFec=;
+        b=IIFSwzzxs1+9WtEpcZN0VtfaLxWlI8F2mnCgzeLD0jDyE82ch9Zvxj4YOut9ZtneSW
+         XvgaypzxAMCD24KEUm/D9Ug1QiU1jkl5IDktuzxzB1A3IwPrtZHFsH1qU8buI8TkfiR2
+         Rn2IcksWZxd6M9many2gAhHGXqlqS51AJEXnVPiSnyfd9aXr+0R6KNEkZBczADty+Fzj
+         SKo/wpnukejWAhfhlQe0acrpizgPc5tQb5V+TM6bwvX3wFFwZTyWYbNt7H6qSCfg3Igp
+         gYZo9CRwmiOo2CeFj5ExCS3I+y+9Gbg1/t3BPD3er911Nmvt8W23Xa9ZE6RZUDZCQ5Z6
+         stfw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@aweber.com header.s=aweber_key_b header.b=ZYZ3UVhN;
+       spf=pass (google.com: domain of jewcdiymnlrsteymbbwmblrgtcys7gwsbjym@smtp-coi-g17-048.aweber.com designates 204.194.223.48 as permitted sender) smtp.mailfrom=jEwcDIyMnLRsTEyMbBwMbLRGtCys7GwsbJyM@smtp-coi-g17-048.aweber.com
+Return-Path: <jEwcDIyMnLRsTEyMbBwMbLRGtCys7GwsbJyM@smtp-coi-g17-048.aweber.com>
+Received: from smtp-coi-g17-048.aweber.com (smtp-coi-g17-048.aweber.com. [204.194.223.48])
+        by mx.google.com with ESMTPS id b25si7366218qtp.12.2020.02.25.02.29.59
+        for <dominikfilipiuk@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 25 Feb 2020 02:29:59 -0800 (PST)
+Received-SPF: pass (google.com: domain of jewcdiymnlrsteymbbwmblrgtcys7gwsbjym@smtp-coi-g17-048.aweber.com designates 204.194.223.48 as permitted sender) client-ip=204.194.223.48;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@aweber.com header.s=aweber_key_b header.b=ZYZ3UVhN;
+       spf=pass (google.com: domain of jewcdiymnlrsteymbbwmblrgtcys7gwsbjym@smtp-coi-g17-048.aweber.com designates 204.194.223.48 as permitted sender) smtp.mailfrom=jEwcDIyMnLRsTEyMbBwMbLRGtCys7GwsbJyM@smtp-coi-g17-048.aweber.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=aweber.com;
+	s=aweber_key_b; t=1582626598;
+	bh=4fJ8f8BmhGXSSCU99a94OjlEkgwFWXc177CvmjtfFec=;
+	h=Date:Content-Type:MIME-Version:From:To:List-Unsubscribe:Subject:
+	 Sender;
+	b=ZYZ3UVhNBu/R+Sh+aBadfFn18JS6VHYY2UygI5Ih7zu9zEH+Zoxxm/zTCw3axyfHc
+	 AmAIo78TagcIWgSAAWoUY5z6tJG/GQGz0Lp6xiKWLbdAhtpw4RfP4ogXVkwNM5jjd9
+	 V2moGQnAf7SMw3oYLKuPH8M6cK0QpDn8P3qyLLOnWbqQF8ioees+RyLuHp/IjsCPAA
+	 lPjAq0SL326T2mkkVX+UcuXyiRU0cFJy+ZPDrRiwyOH029aiLseMi7XP8wj25PRJ1g
+	 3LCNufDL5gsgwDBb9WlzCIiBoZvWcwW95wSiZt9Uq8kH6+JjLJ2DDP0EbK4xxmjEXb
+	 q8hYtNgaCT3Eg==
+Date: Tue, 25 Feb 2020 10:29:58 +0000
+Message-ID: <2B.2E.05451.627F45E5@momentum-coi-mta1.prod.aweberint.com>
+Content-Type: multipart/alternative; boundary="===============2638364881775919668=="
+MIME-Version: 1.0
+X-Loop: healthyaction@aweber.com
+From: "Healthy Action" <support@healthyaction.com.au>
+X-AWMessage: 90cd8242-6b4c-4310-812b-930cfc3bd1ca
+To: "Dominik" <dominikfilipiuk@gmail.com>
+X_Id: 1280119:02-25-2020-05-27-33:dominikfilipiuk@gmail.com
+Require-Recipient-Valid-Since: dominikfilipiuk@gmail.com;
+ Thu, 19 Jan 2017 01:13:30 +0000
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-ID: A393549:L1280119:M02-25-2020-05-27-33:AWeber
+List-Unsubscribe: <https://www.aweber.com/z/r/?jEwcDIyMnLRsTEyMbBwMbLRGtCys7GwsbJyM>,
+ <mailto:healthyaction@aweber.com?subject=unsubscribe;jEwcDIyMnLRsTEyMbBwMbLRGtCys7GwsbJyM>
+X-Subscription: Subscribed on 01/19/2017, via Webform, by 24.201.184.206,
+ from http://www.mms-healthyliving.com/
+Subject: MMS Newsletter - Coronavirus & What you Need to Know...
+X-Mailer: AWeber Composer 2.34.0
+Sender: Healthy Action <support=healthyaction.com.au@send.aweber.com>
+
+--===============2638364881775919668==
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+This is Adam touching base with a little information regarding the recent o=
+utbreak of the Coronavirus & my thoughts about it. As of the time of writin=
+g this update there still appears to be a mortality rate of roughly 2% (tho=
+ugh this varies greatly depending upon where one sources their information)=
+. Let is also be known that much of what is written below is sourced
+directly from Jim Humble's latest newsletter...
+
+Coronaviruses are types of viruses that typically affect the respiratory tr=
+act of mammals, including humans. They are associated with the common cold,=
+ pneumonia, and severe acute respiratory syndrome (SARS) and can also affec=
+t the gut.
+
+Signs of the virus are fever and symptoms of respiratory illness, such as c=
+oughing, difficulty breathing or shortness of breath=E2=80=94however, it ha=
+s been reported that some carriers of this strain of Coronavirus show no re=
+spiratory symptoms at all. This makes it extremely difficult to detect carr=
+iers of the virus, taking into account that health officials are looking fo=
+r respiratory symptoms such as coughing, sneezing
+and breathing difficulties. Another report said some carriers have no fever=
+ and no coughing, but instead are exhibiting symptoms of diarrhoea, vomitin=
+g and chest pains.
+
+The purpose of this newsletter is not to analyse or speculate what is behin=
+d all of this, or try to project where it is all going. As most would agree=
+, we live in very unique times=E2=80=94whether you believe this and other s=
+imilar outbreaks are part of a great conspiracy, or signs of the times acco=
+rding to Biblical predictions, or whatever other reason=E2=80=94I would lik=
+e to say,
+it=E2=80=99s a good time to have some MMS on hand and educate yourself in i=
+ts use.
+
+There is much anecdotal evidence that says MMS has proven very effective in=
+ eradicating viruses including Ebola, Swine Flu, TB, and other respiratory =
+diseases. Chlorine dioxide was completely effective against Anthrax in 2001=
+, and used by US Military for Ebola in 2014. It's been proven by the Red Cr=
+oss in 2012 to eradicate malaria in just four hours, to name a few.
+
+& to quote Jim Humble in his recent newsletter from the Genesis Church "I h=
+ave reason to believe, MMS (chlorine dioxide), could be very effective in b=
+oth preventing and eradicating the Coronavirus. With the barrage of health =
+issues in the world today, I would say, let MMS be your first line of
+defence. Why not be prepared for whatever may come your way? It's better to=
+ have it and not need it than to need it and not have it."
+
+The best way in which to use the MMS when dealing with viral issues is to c=
+ount out 6 drops of MMS (activate with an equal number of drops wit the act=
+ivator), allow to activate for a good 10 seconds or so, & then add 1/2 a gl=
+ass of water (4 ounces / 120 ml), then immediately consume. Wait one hour, =
+& then repeat.
+
+What to do next depends upon how those first two doses made you feel. Follo=
+w these next directions carefully:
+
+Step 1. If you feel better after taking the two 6-drop doses of MMS, reduce=
+ your intake to 3 activated drops in 1/2 cup of water every hour for eight =
+hours a day, until completely well. You may want to continue this for up to=
+ 21 days to be sure you are free of disease and as an overall detoxificatio=
+n of the body. Always take the MMS within seconds of mixing up the dose. An=
+y time you should feel worse when taking MMS, proceed with Step 2
+below.
+
+Step 2. Any time after taking MMS activated drops you feel worse, cut your =
+intake by one half but do not stop hourly doses. If you still feel worse cu=
+t your intake by one half again, but continue with hourly doses. Feeling wo=
+rse after taking the MMS drops such as showing signs of nausea, diarrhoea o=
+r headache is actually a sign that you are ridding your body of toxins. It =
+is called a Herxheimer reaction. It indicates you are killing the disease, =
+but you are killing it too fast=E2=80=94the point is go slow enough so as n=
+ot to make yourself unnecessarily uncomfortable.
+
+If you do not have Coronavirus, but you think you have been exposed, you mi=
+ght want to take two 6-drop doses of MMS, an hour apart. I would then sugge=
+st doing the Starting Procedure, followed by Protocol 1000, as a preventati=
+ve measure and as an overall detoxification of your body.
+
+Again, as I have said before - an ounce of prevention is worth a pound of c=
+ure. For all those wishing to stock up on their MMS products then please do=
+ so from our website below;
+
+https://clicks.aweber.com/y/ct/?l=3DCi381&m=3D3jrWcOKxTFma0mW&b=3D9W.CmSqil=
+pC4rdL1DNDv.Q
+
+Be sure to write me with any queries you may have - I am happy to assist wh=
+ere I can...
+
+Healthy Action
+P.O Box 685
+2480, NSW
+Australia
+
+To unsubscribe or change subscriber options, visit:
+https://www.aweber.com/z/r/?jEwcDIyMnLRsTEyMbBwMbLRGtCys7GwsbJyM
+
+
+--===============2638364881775919668==
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+
+<html><head>
+	<title></title>
+	=
+
+<!--[if !mso]><!--><link href=3D"https://fonts.googleapis.com/css?family=3D=
+Open+Sans:400,400i,700,700i" id=3D"aw-webfonts" rel=3D"stylesheet" type=3D"=
+text/css"><!--<![endif]-->
+<!--[if mso]><style id=3D"aw-webfonts-fallback" type=3D"text/css">[style*=
+=3D"font-family:Open Sans"]{font-family:Helvetica, Arial, sans-serif;}</sty=
+le><![endif]-->
+</head>
+<body data-gramm=3D"false">
+<p><span style=3D"font-size:24px;"><span style=3D"font-family:Open Sans,Hel=
+vetica,Arial,sans-serif;"><font color=3D"#008000">This is Adam touching bas=
+e with a little information regarding the recent outbreak of the Coronaviru=
+s&nbsp;&amp; my thoughts about it. As of the time of writing this update th=
+ere still appears to be a mortality rate of roughly 2% (though this varies =
+greatly depending upon where one sources their information). Let is also be=
+ known that much of what is written below is sourced
+directly from Jim Humble's latest newsletter...<strong><img align=3D"right"=
+ alt=3D"Current Spread Rate of the CoronaVirus..." border=3D"0" hspace=3D"1=
+0" src=3D"https://www.mms-products.com.au/coronavirus-map.jpg" style=3D"BOR=
+DER-TOP: black 2px solid; HEIGHT: 803px; BORDER-RIGHT: black 2px solid; WID=
+TH: 400px; BORDER-BOTTOM: black 2px solid; BORDER-LEFT: black 2px solid" ti=
+tle=3D"Current Spread Rate of the CoronaVirus..." vspace=3D"10"></strong></=
+font></span></span></p>
+
+<p><span style=3D"FONT-SIZE: 14pt">Coronaviruses are types of viruses that =
+typically affect the respiratory tract of mammals, including humans. They a=
+re associated with the common <em><strong>cold, pneumonia, and severe acute=
+ respiratory syndrome (SARS) and can also affect the gut.</strong></em></sp=
+an></p>
+
+<p><span style=3D"font-size: 14pt;">Signs of the virus are fever and sympto=
+ms of respiratory illness, such as coughing, difficulty breathing or shortn=
+ess of breath=E2=80=94however, it has been reported that some carriers of t=
+his strain of Coronavirus show no respiratory symptoms at all. </span><em s=
+tyle=3D"font-size: 14pt;"><strong>This makes it extremely difficult to dete=
+ct carriers of the virus, taking into account that health officials are loo=
+king for respiratory symptoms such as coughing, sneezing
+and breathing difficulties.</strong></em><span style=3D"font-size: 14pt;"> =
+Another report said some carriers have no fever and no coughing, but instea=
+d are exhibiting symptoms of </span><span style=3D"font-size: 18.6667px;">d=
+iarrhoea</span><span style=3D"font-size: 14pt;">, vomiting and chest pains.=
+</span></p>
+
+<p><span style=3D"font-size: 14pt;">The purpose of this newsletter is not t=
+o </span><span style=3D"font-size: 18.6667px;">analyse</span><span style=3D=
+"font-size: 14pt;">&nbsp;or speculate what is behind all of this, or try to=
+ project where it is all going. As most would agree, we live in very unique=
+ times=E2=80=94whether you believe this and other similar outbreaks are par=
+t of a great conspiracy, or signs of the times according to Biblical predic=
+tions, or whatever other reason=E2=80=94I would like to say,
+it=E2=80=99s a good time to have some MMS on hand and educate yourself in i=
+ts use.</span></p>
+
+<p><span style=3D"FONT-SIZE: 14pt"><em><font style=3D"BACKGROUND-COLOR: #ff=
+ffd4"><strong>There is much anecdotal evidence that says MMS has proven ver=
+y effective in eradicating viruses including Ebola, Swine Flu, TB, and othe=
+r respiratory diseases.</strong></font></em> Chlorine dioxide was completel=
+y effective against Anthrax in 2001, and used by US Military for Ebola in 2=
+014. It's been proven by the Red Cross in 2012 to eradicate malaria in just=
+ four hours, to name a few.</span></p>
+
+<p><span style=3D"font-size: 14pt;">&amp; to quote Jim Humble in his recent=
+ newsletter from the </span><span style=3D"font-size: 18.6667px;">Genesis</=
+span><span style=3D"font-size: 14pt;">&nbsp;Church&nbsp;</span><strong styl=
+e=3D"font-size: 14pt;"><em>"I have reason to believe, MMS (chlorine dioxide=
+), could be very effective in both preventing and eradicating the Coronavir=
+us. With the barrage of health issues in the world today, I would say, let =
+MMS be your first line of
+</em></strong><strong><em><span style=3D"font-size: 18.6667px;">defence</sp=
+an><span style=3D"font-size: 14pt;">. Why not be prepared for whatever may =
+come your way? It's better to have it and not need it than to need it and n=
+ot have it."</span></em></strong></p>
+
+<p align=3D"center"><font color=3D"#008000" style=3D""><span style=3D"font-=
+size: 18pt;">The best way in which to use the MMS when dealing with viral i=
+ssues is to count out 6 drops of MMS (activate with an </span><span style=
+=3D"font-size: 24px;">equal</span><span style=3D"font-size: 18pt;">&nbsp;nu=
+mber of drops wit the activator), allow to activate for a good 10 seconds o=
+r so, &amp; then add 1/2 a glass of water (4 ounces / 120 ml), then </span>=
+<span style=3D"font-size: 24px;">immediately</span><span style=3D"font-size=
+: 18pt;">&nbsp;consume. Wait one hour, &amp; then repeat.</span></font></p>
+
+<p><span style=3D"FONT-SIZE: 14pt">What to do next depends upon how those f=
+irst two doses made you feel. Follow these next directions carefully:</span=
+></p>
+
+<p><span style=3D"FONT-SIZE: 14pt"><strong>Step 1.</strong> If you feel bet=
+ter after taking the two 6-drop doses of MMS, reduce your intake to 3 activ=
+ated drops in 1/2 cup of water every hour for eight hours a day, until comp=
+letely well. You may want to continue this for up to 21 days to be sure you=
+ are free of disease and as an overall detoxification of the body. Always t=
+ake the MMS within seconds of mixing up the dose. Any time you should feel =
+worse when taking MMS, proceed with Step 2
+below.</span></p>
+
+<p><strong style=3D"font-size: 14pt;">Step 2.</strong><span style=3D"font-s=
+ize: 14pt;"> Any time after taking MMS activated drops you feel worse, cut =
+your intake by one half but do not stop hourly doses. </span><font style=3D=
+"background-color: rgb(255, 255, 212);"><em style=3D""><span style=3D"font-=
+size: 14pt;">If you still feel worse cut your intake by one half again, but=
+ continue with hourly doses. Feeling worse after taking the MMS drops such =
+as showing signs of nausea, </span><span style=3D"font-size:
+18.6667px;">diarrhoea</span><span style=3D"font-size: 14pt;">&nbsp;or heada=
+che is actually a sign that you are ridding your body of toxins. It is call=
+ed a Herxheimer reaction. It indicates you are killing the disease, but you=
+ are killing it too fast</span></em></font><span style=3D"font-size: 14pt;"=
+>=E2=80=94</span><em style=3D"font-size: 14pt;"><strong>the point is go slo=
+w enough so as not to make yourself unnecessarily uncomfortable.</strong></=
+em></p>
+
+<p><span style=3D"FONT-SIZE: 14pt">If you do not have Coronavirus, but you =
+think you have been exposed, you might want to take two 6-drop doses of MMS=
+, an hour apart. I would then suggest doing the Starting Procedure, followe=
+d by Protocol 1000, as a preventative measure and as an overall detoxificat=
+ion of your body.</span></p>
+
+<p><span style=3D"FONT-SIZE: 18pt">Again, as I have said before - an ounce =
+of prevention is worth a pound of cure. For all those wishing to stock up o=
+n their MMS products then please do so from our website below;</span></p>
+
+<p align=3D"center"><a href=3D"https://clicks.aweber.com/y/ct/?l=3DCi381&am=
+p;m=3D3jrWcOKxTFma0mW&amp;b=3D9W.CmSqilpC4rdL1DNDv.Q"><span style=3D"font-s=
+ize:28px;">https://www.mms-healthyliving.com/</span></a></p>
+
+<p align=3D"center"><span style=3D"FONT-SIZE: 20pt"><font color=3D"#008000"=
+>Be sure to write me with any queries you may have - I am happy to assist w=
+here I can...</font></span></p>
+
+
+<div id=3D"aweber_container" style=3D"background: #ffffff; width: 100% !imp=
+ortant;">
+<div id=3D"aweber_rem" style=3D"box-sizing: border-box; color:#000000 !impo=
+rtant;  font-family:Helvetica, Arial, sans-serif !important;  font-size:12p=
+x !important;  line-height: 16px;  max-width:600px;  margin: 0 auto;  paddi=
+ng: 8px;  text-align:center;  width:100%;"><!--[if gte mso 9]><table width=
+=3D"600" style=3D"color: #000000; font-family: Helvetica, Arial, sans-serif=
+; font-size: 12px; line-height: 16px; text-align: center; "><tr><td style=
+=3D"padding: 8px; "><![endif]-->
+<br/>
+Healthy Action<br>
+P.O Box 685<br>
+2480, NSW<br>
+Australia<br/>
+
+<br>
+<a href=3D"https://www.aweber.com/z/r/?jEwcDIyMnLRsTEyMbBwMbLRGtCys7GwsbJyM=
+" style=3D"color: #000000 !important;" target=3D"_blank">Unsubscribe</a> | =
+<a href=3D"https://www.aweber.com/z/r/?jEwcDIyMnLRsTEyMbBwMbLRGtCys7GwsbJyM=
+" style=3D"color: #000000 !important;" target=3D"_blank">Change Subscriber =
+Options</a>
+<br>
+<br>
+<!--[if gte mso 9]></td></tr></table><![endif]-->
+</div>
+</div>
+<img src=3D"https://openrate.aweber.com/y/o/?l=3DCi381&m=3D3jrWcOKxTFma0mW"=
+ width=3D"1" height=3D"1">
+</body></html>
+--===============2638364881775919668==--

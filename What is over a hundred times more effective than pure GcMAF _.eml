@@ -1,0 +1,1233 @@
+Delivered-To: dominikfilipiuk@gmail.com
+Received: by 2002:a25:4f41:0:0:0:0:0 with SMTP id d62csp3620786ybb;
+        Tue, 25 Feb 2020 02:37:49 -0800 (PST)
+X-Google-Smtp-Source: APXvYqwxb6SioiPyMLru+5jYm0w6K+bGJaJ8nNrM0bkivJQQ7igvyZgnlTvcbpXstFf/3rcrAOlr
+X-Received: by 2002:a17:902:9890:: with SMTP id s16mr52829605plp.71.1582627068917;
+        Tue, 25 Feb 2020 02:37:48 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1582627068; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Cn1nBPINCQvj0OR8r74dV2m2H55E3iF4JKxt6VlTN8Y6JA39RowtP+vE/t6mIW+DaD
+         GJMgAhjDBjyRS9+J1J6t8kRuSQIThHNxQlnHRHXiIhN19+47riy6AiYeanOcKx7Lg5B5
+         1h3X+KxDbQltKvtlsAv+K+/nu2LoilaSYcDA4OA9z9iJGyPspjT3oUvmoHemXND2edAi
+         2TXzSSTQ8ro4uSKvCgYgJDvoi2ikKqtO4yn+uqYZ/Z9LtIcad4pW/pfF5M1Nvm2R9U94
+         ikgV1Dg02LC0ajiIskdGWug9Ku0e20sDZrqx+X5gng4eCHkzyefNoKSlMvPk4bV6nuAE
+         55bQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:mime-version:to:reply-to:from:subject
+         :date:message-id:sender:dkim-signature;
+        bh=4LZbm0KdYK7If1VDYLQpefi+slcMkAiI1kXobvIIBi0=;
+        b=BdvV7Pa1NWSdl9vTexhiXrwMh3ufd+yCJ4quaCCIalray8BCvytWsG3HdmzlZbvAHM
+         JIjGhtm8HbbEothNGg6EJKqTu6Xe4UIhNrXCuIxBtEV6E9Jb2RF5hlX2cjNKHiRZ9sUv
+         oQn5aaSMuXDQYLGOJIUp421eKLaTXUgWTozocJmVzrtc5ioxDUw8rqaF4ZvtlE0q/cAE
+         uECgKK7QVCF6OmW0Nr1q6giCVhd+Tv+UhdNzXgKrwRGRb9qn9A7tx2m9TawWiSYvzfVB
+         dK3Z/Y2FslwbsGXEFNqCW9cSSTuwk1o3vX5yoKJ7uZWGKB/Vq7WjY9JC/vSDx/nrW8/n
+         Yedw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@naturalsolutions.nz header.s=default header.b=iiLgB6n4;
+       spf=pass (google.com: domain of sales@naturalsolutions.nz designates 103.16.181.137 as permitted sender) smtp.mailfrom=sales@naturalsolutions.nz
+Return-Path: <sales@naturalsolutions.nz>
+Received: from naturalsolutions.nz (mail.healthcentre.nz. [103.16.181.137])
+        by mx.google.com with ESMTPS id q4si15704135pll.289.2020.02.25.02.37.48
+        for <dominikfilipiuk@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 25 Feb 2020 02:37:48 -0800 (PST)
+Received-SPF: pass (google.com: domain of sales@naturalsolutions.nz designates 103.16.181.137 as permitted sender) client-ip=103.16.181.137;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@naturalsolutions.nz header.s=default header.b=iiLgB6n4;
+       spf=pass (google.com: domain of sales@naturalsolutions.nz designates 103.16.181.137 as permitted sender) smtp.mailfrom=sales@naturalsolutions.nz
+Received: from naturalsolutions.nz (touchme.nz [103.16.181.137])
+	by healthcentre.nz (Postfix) with ESMTPSA id C46B12CF40
+	for <dominikfilipiuk@gmail.com>; Tue, 25 Feb 2020 23:37:44 +1300 (NZDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=naturalsolutions.nz;
+	s=default; t=1582627064;
+	bh=4LZbm0KdYK7If1VDYLQpefi+slcMkAiI1kXobvIIBi0=; l=32145;
+	h=Subject:From:To;
+	b=iiLgB6n4kPtn9Hcp9k/65XbzoF3IMtF/o36oFJS9qCyi/W4o68SbBts6SfxKGAA/S
+	 iM0IDi21Kuqowss13Ms/qGv5sk8u0oRnLDvp1Hn1xd22/Ij7RTpqWOcV4YQ9ziUsZ5
+	 yCC87ffSGs0kbjxz/L9nQY3/YF6EhbMkiLdT8lfs=
+Authentication-Results: healthcentre.nz;
+        spf=pass (sender IP is 103.16.181.137) smtp.mailfrom=sales@naturalsolutions.nz smtp.helo=naturalsolutions.nz
+Received-SPF: pass (healthcentre.nz: connection is authenticated)
+Sender: Natural Solutions <sales@naturalsolutions.nz>
+Message-ID: <4f67183c88d9eee5e42e656d86680954@naturalsolutions.nz>
+Date: Tue, 25 Feb 2020 23:35:28 +1300
+Subject: What is over a hundred times more effective than pure GcMAF ?
+From: Natural Solutions <sales@naturalsolutions.nz>
+Reply-To: Natural Solutions <sales@naturalsolutions.nz>
+To: dominikfilipiuk@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://w=
+ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http:=
+//www.w3.org/1999/xhtml">
+	<!-- start header --><!--
+	convertInl=
+ineCss =3D false;
+	--><!-- end header -->
+=09
+<style type=
+=3D"text/css">
+body {=20
+	font-family: Arial, Helvetica, sans-se=
+rif;=20
+	margin: 0;=20
+	padding: 0;
+}
+
+table {
+	b=
+order-collapse: collapse;
+	border-spacing: 0;
+}
+
+table=
+.newsletter-pro-content td {
+
+}
+
+a.link,=20
+a.lin=
+k:link,=20
+a.link:visited {=20
+	border: none;=20
+	color: #337ed0; =
+
+	font-size: 12px;=20
+	font-weight: bold;=20
+	text-align: cent=
+er;=20
+	text-decoration: none;
+	cursor: pointer;=20
+	display:=
+ block;=20
+	line-height: 22px;=20
+	width: 100%;=20
+	height: 22px; =
+
+}
+
+a img {=20
+	border: none; border-style: none;=20
+}=
+
+</style>
+
+<style type=3D"text/css">
+body {=20
+	font=
+-family: Arial, Helvetica, sans-serif;=20
+	margin: 0;=20
+	padding:=
+ 0;
+}
+
+table {
+	border-collapse: collapse;
+	borde=
+r-spacing: 0;
+}
+
+table.newsletter-pro-content td {=
+
+
+}
+
+a.link,=20
+a.link:link,=20
+a.link:visited =
+{=20
+	border: none;=20
+	color: #337ed0;=20
+	font-size: 12p=
+x;=20
+	font-weight: bold;=20
+	text-align: center;=20
+	text-decor=
+ation: none;
+	cursor: pointer;=20
+	display: block;=20
+	line-h=
+eight: 22px;=20
+	width: 100%;=20
+	height: 22px;=20
+}
+
+a=
+ img {=20
+	border: none; border-style: none;=20
+}
+</style=
+>
+<head>
+		<meta http-equiv=3D"Content-Type" content=3D"text/htm=
+l; charset=3Dutf-8" />
+		<meta name=3D"viewport" content=3D"width=3D=
+device-width, initial-scale=3D1, minimum-scale=3D1, maximum-scale=3D1"=
+ />
+		<title>What is over a hundred times more effective than pure Gc=
+MAF ?</title>
+
+		<style type=3D"text/css">
+			* {
+				f=
+ont-family: Arial;
+				font-size: 10pt;
+				line-height: 1.2e=
+m;
+			}
+
+			.ReadMsgBody {
+				width: 100%;
+		=
+	}
+
+			.ExternalClass {
+				width: 100%;
+	=
+		}
+
+			.ExternalClass, .ExternalClass p, .ExternalClass span,=
+ .ExternalClass font, .ExternalClass td, .ExternalClass div {
+				li=
+ne-height: 100%;
+			}
+
+			@media only screen and (max-device=
+-width: 480px), only screen and (max-width: 480px) {
+				.np_resize_=
+td_600,
+				table[class=3D"table600"] {
+					width: 300px !impo=
+rtant;
+				}
+			=09
+				.np_content_center {
+					widt=
+h: 280px !important;
+					display: block !important;
+					margin=
+: auto;
+				}
+	=09
+				.np_content_center_zero {
+					wi=
+dth: 100% !important;
+				}
+
+				.np_resize_600 {
+					=
+width: 300px !important;
+					display: block !important;
+					ma=
+rgin: auto;
+				}
+
+				.np_hide {
+					display: none =
+!important;
+				}
+
+				.np_show_height15 {
+					displ=
+ay: block !important;
+					width: 100% !important;
+					height: =
+15px !important;
+				}
+
+				.np_show_height10_color {=
+
+					display: block !important;
+					width: 100% !important=
+;
+					height: 10px !important;
+					background-color: #383638 !i=
+mportant;
+				}
+
+				.np_bg_color_black {
+					backgrou=
+nd-color: #383638 !important;
+				}
+
+				.np_color_white {=
+
+					color: #ffffff !important;
+				}
+
+				.np_bg_co=
+lor_white {
+					background-color: #ffffff !important;
+		=
+		}
+			=09
+				.np_color_black {
+					color: #383638 !import=
+ant;
+				}
+
+				.np_show_height20 {
+					display: blo=
+ck !important;
+					width: 100% !important;
+					height: 20px !im=
+portant;
+				}
+
+				.np_show_height15 {
+					display:=
+ block !important;
+					width: 100% !important;
+					height: 15px=
+ !important;
+				}
+
+				.np_show_height25 {
+					disp=
+lay: block !important;
+					width: 100% !important;
+					height: =
+25px !important;
+				}
+
+				.np_show_height30 {
+					=
+display: block !important;
+					width: 100% !important;
+					heig=
+ht: 30px !important;
+				}
+
+				.np_content_padding {=
+
+					width: 10px !important;
+				}
+
+				.np_content_p=
+adding_zero {
+					width: 0 !important;
+				}
+
+				.n=
+p_height_10 {
+					height: 10px !important;
+				}
+
+		=
+		.np_logo {
+					text-align: center !important;
+				}
+	=
+		=09
+				.np_logo img {
+					display: inline !important;
+	=
+			}
+
+				.np_header_date, .np_header_link {
+					text-align=
+: center !important;
+				}
+
+				.np_resize_image, .np_res=
+ize_image img, .np_resize_image600 img {
+					width: 100% !important=
+;
+					height: auto !important;
+				}
+
+				.np_resize=
+_image600 {
+					width: 300px !important;
+					display: block !im=
+portant;
+					margin: auto;
+				}
+
+				.paragraph_res=
+c {
+					text-align: center !important;
+				}
+
+				.n=
+p_width_100 {
+					width: 100% !important;
+				}
+
+		=
+		.np_min_height_auto {
+					min-height: auto !important;
+			=
+	}
+			}
+		=09
+			body {
+				min-width: 0 !important=
+;
+			}
+		</style>
+	</head>
+	<body style=3D"margin: 0; =
+padding: 0; font-family: Arial; font-size: 10pt; line-height: 1.2em; col=
+or: #666666; width:100%; min-width: 600px" bgcolor=3D"#4a4a4a"><table clas=
+s=3D"newsletter-pro-container" width=3D"100%" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#4a4a4a" style=3D"border-collapse: c=
+ollapse;">
+<tbody>
+<tr>
+<td align=3D"center">
+<table cl=
+ass=3D"table600" width=3D"600" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" style=3D"border-collapse: collapse;">
+<tbody>
+<tr><!-- h=
+eader bar -->
+<td align=3D"left" bgcolor=3D"#55b82b">
+<table wid=
+th=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"bord=
+er-collapse: collapse;">
+<tbody>
+<tr>
+<td align=3D"left" w=
+idth=3D"20" class=3D"np_content_padding"></td>
+<td align=3D"left" clas=
+s=3D"np_content_center">
+<table width=3D"100%" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse;">
+<tbody=
+>
+<tr>
+<td align=3D"left" style=3D"color: #ffffff; font-weight: =
+bold;">February 25.2020</td>
+<td align=3D"right" style=3D"color: #ff=
+ffff;"><a href=3D"https://naturalsolutions.nz/modules/newsletterpro/newsle=
+tter.php?&email=3Ddominikfilipiuk@gmail.com&token_tpl=3Dd0cbbaa577841dd7=
+ef85217a0ab62fcf" style=3D"text-decoration: underline; color: #ffffff;">Vi=
+ew online</a> / <a href=3D"https://naturalsolutions.nz/module/newsletterpr=
+o/forward?email=3Ddominikfilipiuk@gmail.com&token=3De9c2e6d6b17ea46bde80=
+50b863c79bf5" style=3D"text-decoration: underline; color: #ffffff;">Forwar=
+d to friends</a></td>
+</tr>
+</tbody>
+</table>
+</td>=
+
+<td align=3D"left" width=3D"20" class=3D"np_content_padding"></td=
+>
+</tr>
+</tbody>
+</table>
+</td>
+<!-- end header=
+ bar --></tr>
+<tr>
+<td align=3D"left">
+<table width=3D"100%"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collap=
+se: collapse;" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td align=
+=3D"left" height=3D"20"></td>
+</tr>
+<tr><!-- logo bar -->=
+
+<td align=3D"left">
+<table width=3D"100%" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse;">
+<t=
+body>
+<tr>
+<td class=3D"np_resize_600" align=3D"left">
+<tabl=
+e width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D=
+"border-collapse: collapse;">
+<tbody>
+<tr>
+<td width=3D"20=
+" class=3D"np_content_padding"></td>
+<td class=3D"np_content_center"=
+ align=3D"left">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" style=3D"border-collapse: collapse;">
+<tbody=
+>
+<tr>
+<td class=3D"np_resize_image" align=3D"center" valign=
+=3D"middle"><img src=3D"https://naturalsolutions.nz/img/natural-solution=
+s-logo-1576400780.jpg" alt=3D"Natural Solutions" style=3D"display: block=
+; max-height: 100px;" width=3D"243" height=3D"100" /></td>
+</tr>=
+
+</tbody>
+</table>
+</td>
+<td width=3D"20" class=3D"n=
+p_content_padding"></td>
+</tr>
+</tbody>
+</table>
+</td>=
+
+</tr>
+</tbody>
+</table>
+</td>
+<!-- end logo bar -=
+-></tr>
+<tr>
+<td align=3D"left" height=3D"40">
+<div style=3D=
+"text-align: center;"><span style=3D"color: #ff8c00; font-size: 24pt; font=
+-weight: bold;">BREAKING NEWS</span></div>
+<div style=3D"text-align: c=
+enter;"><span style=3D"color: #55b82b; font-size: 24pt; font-weight: bold;=
+">imuno<sup>=C2=AE</sup> proven to be over 100 times more effective than =
+pure GcMAF</span></div>
+<br />
+<div style=3D"text-align: center=
+; padding-left: 5px; padding-right: 5px; padding-bottom: 5px; font-weigh=
+t: bold;">Scientists at R.E.D. Laboratories in Belgium have elucidated t=
+he mechanism of action of GcMAF and proven that imuno<sup>=C2=AE</sup> is=
+ over 100 times more potent than purified GcMAF.</div>
+</td>
+</t=
+r>
+<tr>
+<td align=3D"left" height=3D"5" bgcolor=3D"#55b82b"></t=
+d>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- =
+banner --> <!-- end banner -->
+<tr>
+<td align=3D"left">
+<ta=
+ble width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"border-collapse: collapse;" bgcolor=3D"#ffffff">
+<tbody>
+<t=
+r>
+<td align=3D"left" height=3D"25">
+<table class=3D"clear-new=
+sletter-template-products" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" style=3D"margin: 0; padding: 0; border-collapse: collapse;">
+<tbody>=
+
+<tr>
+<td class=3D"newsletter-products-container">
+<table =
+class=3D"np-responsive-table-container" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0">
+<tbody><!----------------BEGIN/END PRODUCT------------=
+-------->
+<tr>
+<td height=3D"15"></td>
+</tr>
+<=
+tr>
+<td align=3D"left">
+<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse=
+;">
+<tbody>
+<tr class=3D"np-row-products-target">
+<td align=
+=3D"left">
+<table data-id=3D"6" width=3D"100%" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse;" bgcol=
+or=3D"#ffffff" class=3D"newsletter-pro-product">
+<tbody>
+<tr=
+>
+<td align=3D"left" width=3D"250" class=3D"np_resize_600" valign=3D=
+"top" style=3D"position: relative;">
+<table width=3D"100%" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse;"=
+>
+<tbody>
+<tr>
+<td align=3D"left" height=3D"15"></td=
+>
+</tr>
+<tr>
+<td align=3D"left" class=3D"np_resize_image">=
+<a href=3D"https://naturalsolutions.nz/imuno-3ml-vial?newsletterpro_source=
+=3Dnewsletter&id_newsletter=3D3&SubmitCurrency=3Dyes&id_currency=3D1" ta=
+rget=3D"_blank" style=3D"text-decoration: none; display: block;"> <img c=
+lass=3D"newsletter-pro-image" src=3D"https://naturalsolutions.nz/253-lar=
+ge_default/imuno-3ml-vial.jpg" width=3D"100%" style=3D"display: block;" =
+alt=3D"" /> </a></td>
+</tr>
+</tbody>
+</table>
+</td>=
+
+<td align=3D"center" class=3D"np_resize_600" valign=3D"top">
+<=
+table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<td align=
+=3D"left" class=3D"np_content_padding" width=3D"20"></td>
+<td align=
+=3D"left" class=3D"np_content_center" valign=3D"top">
+<table width=3D=
+"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-=
+collapse: collapse; min-height: 225px;" class=3D"np_min_height_aut=
+o">
+<tbody>
+<tr>
+<td align=3D"left" valign=3D"top">
+<t=
+able width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" sty=
+le=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<td align=3D=
+"left" height=3D"15"></td>
+</tr>
+<tr>
+<td align=3D"left">=
+<a style=3D"color: #55b82b; text-decoration: none; font-size: 14pt;" h=
+ref=3D"https://naturalsolutions.nz/imuno-3ml-vial?newsletterpro_source=
+=3Dnewsletter&id_newsletter=3D3&SubmitCurrency=3Dyes&id_currency=3D1" ta=
+rget=3D"_blank" class=3D"newsletter-pro-name"> imuno<sup>=C2=AE</sup> 3ml=
+ vial :<br />GcMAF Made MUCH Better =E2=9C=85 </a></td>
+</tr>
+<tr=
+>
+<td align=3D"left" height=3D"15"></td>
+</tr>
+<tr><!-------=
+------------------------------>
+<td align=3D"left" class=3D"newslette=
+r-pro-description_short">Each Vial Contains: 3ml, which equals 15 x 0.2m=
+l servings.
+<ul>
+<li>Adult Serving Size with late stage Cancer=
+: 0.2 ml (4 drops) once a day. (Vial will last approx 15 days at this ra=
+te)<br /><br /></li>
+<li>Child Serving Size with Autism: 0.01 ml onc=
+e a week per 5 Kg (11 lbs) of body weight.</li>
+</ul>
+</t=
+d>
+</tr>
+<tr>
+<td align=3D"left" height=3D"15"></td>=
+
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<=
+tr>
+<td align=3D"left" valign=3D"bottom">
+<table width=3D"100%"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collap=
+se: collapse;">
+<tbody>
+<tr>
+<td align=3D"left">
+<ta=
+ble width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" styl=
+e=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<td align=
+=3D"left" valign=3D"middle"><span style=3D"color: #55b82b; font-size: 18pt=
+; font-weight: bold;">US$650.00</span></td>
+<td align=3D"right" val=
+ign=3D"bottom">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"65" bgcolor=3D"#55b82b" style=3D"border-collapse: collapse; f=
+ont-weight: bold;">
+<tbody>
+<tr>
+<td align=3D"center" valign=
+=3D"middle" height=3D"20" bgcolor=3D"#55b82b"><a href=3D"https://natural=
+solutions.nz/imuno-3ml-vial?newsletterpro_source=3Dnewsletter&id_newslette=
+r=3D3&SubmitCurrency=3Dyes&id_currency=3D1" target=3D"_blank" style=3D"col=
+or: #ffffff; text-decoration: none; font-size: 9pt;">VIEW</a></td>
+<=
+/tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+<=
+/table>
+</td>
+</tr>
+<tr>
+<td align=3D"left" height=3D"=
+15"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</t=
+r>
+</tbody>
+</table>
+</td>
+<td align=3D"left" class=3D=
+"np_content_padding" width=3D"20"></td>
+</tr>
+</tbody>
+</tab=
+le>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</t=
+r>
+</tbody>
+</table>
+</td>
+</tr>
+<!---------------=
+-BEGIN/END PRODUCT--------------------> <!-----------------------------E=
+ND PRODUCT / BEGIN MESSAGE------------------------------------->
+<tr=
+>
+<td align=3D"left" height=3D"40"><br />
+<div style=3D"text-a=
+lign: center;"><span style=3D"color: #55b82b; font-size: 16pt; font-weight=
+: bold;">FREE World Wide Express Courier<br /></span></div>
+</td>=
+
+</tr>
+<tr>
+<td height=3D"15"></td>
+</tr>
+<!---=
+-------------END MESSAGE--------------------></tbody>
+</table>
+<=
+/td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<=
+tr>
+<td align=3D"left">
+<table width=3D"100%" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse=
+;">
+<tbody>
+<tr>
+<td align=3D"left" width=3D"20" class=3D"np=
+_content_padding"></td>
+<td align=3D"left" class=3D"np_content_center=
+"></td>
+<td align=3D"left" width=3D"20" class=3D"np_content_padding=
+"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<=
+/tbody>
+</table>
+</td>
+</tr>
+<!-- block products -=
+->
+<tr>
+<td align=3D"center" class=3D"np-products-target"><span s=
+tyle=3D"color: #ffffff;" class=3D"np-products-template-info-remove"><spa=
+n style=3D"color: #ffffff;" class=3D"np-products-template-info-remov=
+e">=C2=A0<br /></span></span></td>
+</tr>
+<!-- end block produc=
+ts --> <!-- block text --> <!-- text block --> <!-----------------------=
+------------------------------------------------------------------------=
+--->
+<tr>
+<td align=3D"left">
+<table width=3D"100%" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse: co=
+llapse;" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td align=3D"le=
+ft" height=3D"5" bgcolor=3D"#55b82b"></td>
+</tr>
+<tr>
+<td al=
+ign=3D"left" height=3D"15"></td>
+</tr>
+<tr>
+<td align=3D"le=
+ft">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadd=
+ing=3D"0" style=3D"border-collapse: collapse;">
+<tbody>
+<=
+tr>
+<td align=3D"left" width=3D"20" class=3D"np_content_padding"></=
+td>
+<td align=3D"left" class=3D"np_content_center">
+<table wi=
+dth=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"bor=
+der-collapse: collapse;">
+<tbody>
+<tr>
+<td align=3D"center=
+" style=3D"font-size: 16pt; color: #55b82b;">imuno<sup>=C2=AE</sup> =3D G=
+cMAF Made MUCH Better<br /><br /></td>
+</tr>
+<tr>
+<td al=
+ign=3D"left"><img class=3D"newsletter-pro-image" src=3D"https://naturalsol=
+utions.nz/images/imuno-GcMAF-Nagalase-960x542.jpg" width=3D"100%" styl=
+e=3D"display: block;" alt=3D"imuno is 100 times more potent than GcMAF" =
+/>
+<div style=3D"padding-left: 5px; padding-right: 5px; padding-bottom=
+: 5px;">
+<p align=3D"left" style=3D"margin-bottom: 0cm; line-height:=
+ 100%;"><span face=3D"Arial, sans-serif" style=3D"font-family: Arial, sa=
+ns-serif;"><i>19<sup>th</sup> February 2020: Dr Marco Ruggiero, MD. PhD.=
+</i></span></p>
+<p align=3D"left" style=3D"margin-bottom: 0cm; line-h=
+eight: 100%;"><span face=3D"Arial, sans-serif" style=3D"font-family: Ari=
+al, sans-serif;">Elevated serum alpha-N-acetylgalactosaminidase (nagalas=
+e) is associated with a number of life threatening and/or debilitating c=
+onditions ranging from cancer <i>(Korbelik et al., 1998; Greco et al., 2=
+009; Thyer et al., 2013)</i> to viral infections caused by influenza vir=
+us and HIV <i>(Yamamoto and Urade, 2005; Yamamoto, 2006)</i>, bacterial =
+infections <i>(Caines et al., 2008)</i>, alcoholism <i>(Zoga et al., 201=
+7)</i>, and autism <i>(Bradstreet et al., 2012)</i>. Nagalase, an enzyme=
+, was first proposed as a marker for cancer and viral infections and its=
+ increased serum activity in these conditions was associated with immune=
+ system deficiency because nagalase prevents formation of the Gc protein=
+ derived Macrophage Activating Factor (GcMAF), an immune stimulant cytok=
+ine <i>(Yamamoto and Naraparaju, 1997; Yamamoto and Urade, 2005; Yamamot=
+o, 2006)</i>. According to the original hypothesis proposed by Yamamoto =
+and Colleagues, cancer cells and cells infected by viruses produced and =
+released nagalase that caused immune deficiency that, in turn, favored t=
+he progression of cancer or viral infections. Therefore, elevated serum =
+nagalase activity in cancer and viral infections was considered a conseq=
+uence of cancer or viral-infected cells releasing nagalase. In apparent =
+agreement with this hypothesis, successful immunotherapy of cancer with =
+GcMAF was associated with a decrease of serum nagalase activity <i>(Thye=
+r et al., 2013; Schwalb et al., 2016)</i> that was attributed to the eff=
+ects of GcMAF on macrophages that, once activated, attacked cancer cells=
+ with consequent decrease of the number of cancer cells producing nagala=
+se. </span></p>
+<!------------------------------->
+<p align=3D"=
+left" style=3D"margin-bottom: 0cm; line-height: 100%;"><span face=3D"Ari=
+al, sans-serif" style=3D"font-family: Arial, sans-serif;">This interpretat=
+ion, however, was contradicted by the observation that in autism, just l=
+ike in cancer, successful immunotherapy with GcMAF was associated with s=
+ignificant decrease of serum nagalase activity <i>(Bradstreet et al., 20=
+12)</i>. Since the autistic subjects successfully treated with GcMAF had=
+ no signs of cancer cells producing nagalase, nor of any other concurren=
+t disease or infections <i>(Bradstreet et al., 2012)</i>, a novel hypoth=
+esis concerning the role of nagalase was proposed. According to this nov=
+el hypothesis, elevated nagalase activity has to be considered more a pa=
+thogenetic factor for cancer and other conditions rather than a simple m=
+arker. In simpler words, elevated nagalase activity may be one of the ca=
+usative factors leading to cancer, autism or other diseases because elev=
+ated nagalase impairs the function of the immune system and immune defic=
+iency plays a pivotal role in the onset and development of cancer and ot=
+her diseases. Such a role for nagalase is now well established as exempl=
+ified by the title of a recent review that reads " Is =CE=B1-N-acetylgala=
+ctosaminidase the key to curing cancer?" <i>(Saburi et al., 2017a)</i>. =
+Based on these considerations, strategies aiming at reducing serum nagal=
+ase activity may prove useful in the fight against cancer, autism, viral=
+ infections and all other conditions associated with elevated serum naga=
+lase activity.</span></p>
+<!------------------------------->
+<p =
+align=3D"left" style=3D"margin-bottom: 0cm; line-height: 100%;"><span fa=
+ce=3D"Arial, sans-serif" style=3D"font-family: Arial, sans-serif; font-w=
+eight: bold;">Here we demonstrated for the first time that GcMAF directl=
+y binds to, and inhibits, human nagalase <i>in vitro</i>, thus elucidati=
+ng the mechanism of action of GcMAF and explaining its effectiveness in =
+a variety of conditions ranging from cancer to autism <i>(Saburi et al.,=
+ 2017a; Saburi et al., 2017b; Bradstreet et al., 2012; Greilberger and H=
+erwig, 2020)</i>. In addition, we demonstrate that a novel supplement co=
+ntaining low-molecular-weight microbial chondroitin sulfate, ultrapure p=
+hosphatidylcholine, and vitamin D3, (imuno=C2=AE, imuno Corporation, Vanu=
+atu) shows more than 100 fold higher activity than purified GcMAF.</span=
+></p>
+<!------------------------------->
+<p align=3D"left" sty=
+le=3D"margin-bottom: 0cm; line-height: 100%;"><span face=3D"Arial, sans-=
+serif" style=3D"font-family: Arial, sans-serif;">Human nagalase and GcMAF =
+were purified at R.E.D. Laboratories (Zellik, Belgium). The experiment w=
+as performed using microtiter plates coated with a specific antibody abl=
+e to capture human nagalase. Samples were incubated with a standardized =
+dilution of a pool of 300 human sera from healthy subjects and, after 1 =
+h incubation and exhaustive washing, nagalase-GcMAF or nagalase-imun=
+o=C2=AE complexes were detected with a horse radish peroxidase conjugate =
+of a rabbit antibody. In order to establish the kinetics of interaction =
+between nagalase and GcMAF, or imuno=C2=AE, the serum pool was mixed eith=
+er with 200 ng of purified Gc-MAF, or with a 1:100 dilution of imuno=
+=C2=AE in phosphate buffered saline (PBS). Since preliminary experiments =
+indicated that undiluted imuno=C2=AE exceeded the binding capacity of nag=
+alase in the test, imuno=C2=AE was diluted 1:100 in PBS. The mixture was =
+then incubated at room temperature for 4, 24, 48, 72 and 120 h. Values f=
+or nagalase binding activity in the absence of GcMAF or imuno=C2=AE, with=
+ only PBS in the reaction mixture, were taken as 1.00. The experiment wa=
+s repeated twice and the results reported in Fig. 1 are the means of the=
+ two experiments.</span></p>
+<!------------------------------->
+<=
+p align=3D"left" style=3D"margin-bottom: 0cm; line-height: 100%;"><span =
+face=3D"Arial, sans-serif" style=3D"font-family: Arial, sans-serif;">As =
+shown in Fig. 1, purified GcMAF bound human nagalase only after 4 h incu=
+bation, reached a peak at 48 h, and returned below baseline values at 12=
+0 h. imuno=C2=AE, on the other hand, had an initial value (at 0 h) higher=
+ than PBS, thus demonstrating immediate, intrinsic GcMAF activity agains=
+t human nagalase. At every time point, imuno=C2=AE showed significantly h=
+igher activity in comparison with purified GcMAF and, at 120 h, imun=
+o=C2=AE activity was still well above baseline, thus indicating a stronge=
+r, more prolonged activity. It is worth noticing that imuno=C2=AE was dil=
+uted 100 fold and, therefore, it may be argued that its activity against=
+ human nagalase is more than 100 fold higher than that of purified GcMAF=
+.</span></p>
+<!------------------------------->
+<p align=3D"lef=
+t" style=3D"margin-bottom: 0cm; line-height: 100%;"><span face=3D"Arial,=
+ sans-serif" style=3D"font-family: Arial, sans-serif;">It is also importan=
+t to consider that these results were obtained <i>in vitro</i>, that is =
+in the absence of any variable or confounding factor that may hamper int=
+erpretation of results observed in clinical settings. Direct interaction=
+ between imuno=C2=AE and nagalase may help explaining the effectiveness o=
+f imuno=C2=AE recently observed by Antonucci and Colleagues in those cond=
+itions where GcMAF had proven effective in the past <i>(Antonucci et al.=
+, 2019a; Antonucci et al., 2019b)</i> and lead to propose imuno=C2=AE as =
+a more potent and intrinsically safer substitute for human-blood-derived=
+ GcMAF. The significantly higher potency of imuno=C2=AE is to be ascribed=
+ to its peculiar molecular design that was described in detail in two re=
+cent papers <i>(Ruggiero and Pacini, 2018a; Ruggiero and Pacini, 2018b)<=
+/i>; in brief, imuno=C2=AE reproduces that physical-chemical features of =
+GcMAF at a much higher molecular efficiency and density. The N-acetylgal=
+actosamine active site of GcMAF is present in much higher concentration =
+in imuno=C2=AE thanks to the presence of low-molecular-weight chondroitin=
+ sulfate, a sulfated polysaccharide that is composed by an alternating c=
+hain of Nacetylgalactosamine and glucuronic acid. The hydrophobic moieti=
+es of GcMAF, that are the regions binding vitamin D and fatty acids, are=
+ present in imuno=C2=AE thanks to the binding of phosphatidylcholine to c=
+hondroitin sulfate. Vitamin D3, essential for increasing the potency of =
+GcMAF as demonstrated by Greilberger and Herwig in 2020, is intercalated=
+ in the proto-cellular structure formed by the core of chondroitin sulfa=
+te surrounded by phosphatidylcholine <i>(Ruggiero and Pacini, 2018a)</i>=
+. In fact, imuno=C2=AE was designed taking into account the physical-chem=
+ical features of GcMAF that were published 2013 when a molecular model o=
+f GcMAF interaction with the cell membrane was described <i>(Thyer et al=
+., 2013)</i>. In this model, optimal interaction was achieved when GcMAF=
+ was non-covalently bound to a fatty acid - in that example, oleic acid =
+- and vitamin D3 that are the conditions reproduced, at a much higher mo=
+lecular efficiency and density, in imuno=C2=AE.</span></p>
+</div>=
+
+<!-----------------------------------------------------------------=
+------------------------> <!--<p><b>NOTE:</b><br />Promotion valid until=
+ the 31st of July 2019, and not=C2=A0necessarily valid in conjunction wit=
+h other promotions, discounts or vouchers.</p>--> <!--------------------=
+-------------------------------------------------></td>
+</tr>
+</t=
+body>
+</table>
+</td>
+<td align=3D"left" width=3D"20" cla=
+ss=3D"np_content_padding"></td>
+</tr>
+</tbody>
+</tab=
+le>
+</td>
+</tr>
+<tr>
+<td align=3D"left" height=3D"15">=
+</td>
+</tr>
+<tr>
+<td align=3D"left" height=3D"2" bgcolor=3D"=
+#2e2e2e"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</t=
+r>
+<!-- end text block --> <!---------------------------------------=
+----------------------------------------------------------> <!-- end tex=
+t block -->
+<tr>
+<td height=3D"15"></td>
+</tr>
+<=
+tr>
+<td align=3D"left"><!-- block footer -->
+<table width=3D"100%=
+" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-colla=
+pse: collapse;" bgcolor=3D"#55b82b">
+<tbody>
+<tr>
+<td align=
+=3D"left" height=3D"20"></td>
+</tr>
+<tr>
+<td align=3D"left">=
+
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D=
+"0" style=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<td a=
+lign=3D"left" class=3D"np_resize_600" width=3D"300" valign=3D"top">
+<=
+table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" st=
+yle=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<td align=
+=3D"left" width=3D"20" class=3D"np_hide"></td>
+<td align=3D"left" cl=
+ass=3D"np_content_center">
+<table width=3D"100%" border=3D"0" cellspac=
+ing=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse;">
+<=
+tbody>
+<tr>
+<td align=3D"left" valign=3D"top" width=3D"50%"=
+>
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse: collapse;">
+<tbody>
+<tr>
+<t=
+d align=3D"left" style=3D"color: #ffffff;">INFORMATION</td>
+</tr>=
+
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<td><a=
+ href=3D"https://naturalsolutions.nz/new-products" target=3D"_blank" sty=
+le=3D"color: #ffffff; text-decoration: none;">New products</a></td>
+</=
+tr>
+<tr>
+<td><a href=3D"https://naturalsolutions.nz/best-sales" =
+target=3D"_blank" style=3D"color: #ffffff; text-decoration: none;">Best =
+sales</a></td>
+</tr>
+<tr>
+<td><a href=3D"https://naturalso=
+lutions.nz/contact-us" target=3D"_blank" style=3D"color: #ffffff; text-d=
+ecoration: none;">Contact us</a></td>
+</tr>
+<tr>
+<td><a hr=
+ef=3D"https://naturalsolutions.nz/sitemap" target=3D"_blank" style=3D"colo=
+r: #ffffff; text-decoration: none;">Sitemap</a></td>
+</tr>
+</tbo=
+dy>
+</table>
+</td>
+<td align=3D"left" valign=3D"top" width=
+=3D"50%">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0" style=3D"border-collapse: collapse;">
+<tbody>
+<t=
+r>
+<td align=3D"left" style=3D"color: #ffffff;">MY ACCOUNT</td>
+<=
+/tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+<tr>
+<t=
+d><a href=3D"https://naturalsolutions.nz/order-history" target=3D"_blank=
+" style=3D"color: #ffffff; text-decoration: none;">My orders</a></=
+td>
+</tr>
+<tr>
+<td><a href=3D"https://naturalsolutions.nz/c=
+redit-slip" target=3D"_blank" style=3D"color: #ffffff; text-decoration: =
+none;">My credit slips</a></td>
+</tr>
+<tr>
+<td><a href=3D"h=
+ttps://naturalsolutions.nz/addresses" target=3D"_blank" style=3D"color: =
+#ffffff; text-decoration: none;">My addresses</a></td>
+</tr>
+<tr=
+>
+<td><a href=3D"https://naturalsolutions.nz/identity" target=3D"_bl=
+ank" style=3D"color: #ffffff; text-decoration: none;">My personal info</a>=
+</td>
+</tr>
+<tr>
+<td><a href=3D"https://naturalsolutions.nz/=
+discount" target=3D"_blank" style=3D"color: #ffffff; text-decoration: no=
+ne;">My vouchers</a></td>
+</tr>
+</tbody>
+</table>
+</td>=
+
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbo=
+dy>
+</table>
+</td>
+<td height=3D"15" class=3D"np_show_heig=
+ht15"></td>
+<td align=3D"left" class=3D"np_resize_600" width=3D"300=
+" valign=3D"top">
+<table width=3D"100%" border=3D"0" cellspacing=3D"0=
+" cellpadding=3D"0" style=3D"border-collapse: collapse;">
+<tbody=
+>
+<tr>
+<td align=3D"left" class=3D"np_content_center">
+<tabl=
+e width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D=
+"border-collapse: collapse;">
+<tbody>
+<tr>
+<td align=3D"le=
+ft" valign=3D"top" width=3D"50%">
+<table width=3D"100%" border=3D"0"=
+ cellspacing=3D"0" cellpadding=3D"0" style=3D"color: #ffffff;">
+<tbody=
+>
+<tr>
+<td align=3D"left" style=3D"color: #ffffff;">CONTACT</td>=
+
+</tr>
+<tr>
+<td height=3D"10"></td>
+</tr>
+<=
+tr>
+<td style=3D"color: #ffffff;">Natural Solutions NZ</td>
+</t=
+r>
+<tr>
+<td style=3D"color: #ffffff;">40 St Benedicts Street</t=
+d>
+</tr>
+<tr>
+<td style=3D"color: #ffffff;">Auckland, New =
+Zealand</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td ali=
+gn=3D"left" valign=3D"top" width=3D"50%">
+<table width=3D"100%" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse: co=
+llapse;">
+<tbody>
+<tr>
+<td align=3D"left" style=3D"color: #f=
+fffff;"><!--FOLLOW US--></td>
+</tr>
+<tr>
+<td height=3D"10"><=
+/td>
+</tr>
+<tr>
+<td><!--<a href=3D"https://www.facebook.com=
+/naturalsolutionsnz/" target=3D"_blank" style=3D"color: #ffffff; text-de=
+coration: none;">Facebook</a>--></td>
+</tr>
+<tr>
+<td></td>=
+
+</tr>
+<tr>
+<td></td>
+</tr>
+<tr>
+<td></td>=
+
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbo=
+dy>
+</table>
+</td>
+<td align=3D"left" width=3D"20" class=3D"=
+np_hide"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</t=
+r>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td a=
+lign=3D"left" height=3D"15"></td>
+</tr>
+<tr>
+<td align=3D"ce=
+nter" style=3D"color: #ffffff;"><a href=3D"https://naturalsolutions.nz/m=
+odule/newsletterpro/unsubscribe?email=3Ddominikfilipiuk@gmail.com&u_to=
+ken=3De9c2e6d6b17ea46bde8050b863c79bf5&msg=3D1&token=3Dd0cbbaa577841dd7ef8=
+5217a0ab62fcf" target=3D"_blank" style=3D"text-decoration: underline; co=
+lor: #ffffff;">Unsubscribe</a> from this newsletter instantly.</td>
+<=
+/tr>
+<tr>
+<td align=3D"left" height=3D"15"></td>
+</t=
+r>
+</tbody>
+</table>
+<!-- end block footer --></td>
+</=
+tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+<=
+/table><img style=3D"display: none; margin: 0; padding: 0; float: left; po=
+sition: absolute;" src=3D"https://naturalsolutions.nz/modules/newsletterpr=
+o/opened_email.php?email=3Ddominikfilipiuk@gmail.com&token=3Dd0cbbaa5778=
+41dd7ef85217a0ab62fcf" height=3D"1" width=3D"1" data-embed=3D"0"/></bo=
+dy>
+</html>
